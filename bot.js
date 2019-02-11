@@ -17,13 +17,13 @@ client.on('ready',  () => {
 
 
 
-const devs = ["518113780723351592"];
-const adminprefix = ["#"];
+const devs = ["519312154558464021"];
+const adminprefix = ["-"];
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
       
-  if (message.content.startsWith('p!ply')) {
+  if (message.content.startsWith('ply')) {
     client.user.setGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
   } else 
