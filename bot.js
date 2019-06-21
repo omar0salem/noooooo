@@ -27,7 +27,7 @@ client.on('message', message => {
     client.user.setGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
   } else 
-     if (message.content === ("leave")) {
+     if (message.content === ("اطلع بره")) {
     message.guild.leave();        
   } else  
   if (message.content.startsWith('wt')) {
